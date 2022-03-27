@@ -13,6 +13,63 @@
             padding: 0;
             box-sizing: border-box;
         }
+        /* mobile version */
+        @media only screen and (max-width: 599px) {
+            .third-col {
+                display: none;
+            }
+            .col-width {
+                width: 50%;
+            }
+            .footer-links-spacer {
+                width: 5% !important;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .title {
+                font-size: 26px;
+            }
+            .footer-links-spacer {
+                width: 0% !important;
+            }
+            .footer-link {
+                font-size: 12px !important;
+            }
+        }
+        @media only screen and (max-width: 415px) {
+            .title {
+                font-size: 21px;
+            }
+            .top-btn {
+                font-size: 14px;
+                width: 100% !important;
+                padding: 13px !important;
+                padding: 12px 20px;
+            }
+            .col-width {
+                width: 100%;
+            }
+            .col-direction {
+                display: flex;
+                flex-direction: column;
+            }
+            .col-title-margin {
+                margin-bottom: 40px;
+            }
+            .section-title {
+                font-size: 28px !important;
+            }
+            .sofa-cat-title {
+                font-size: 18px !important;
+            }
+            .footer-link {
+                font-size: 11px !important;
+            }
+            .footer-text {
+                font-size: 13px !important;
+                margin-top: 6px !important;
+            }
+        }
     </style>
 </head>
 <body style="background: #f2f2f2;">
@@ -23,8 +80,8 @@
         <tr>
             <td>
                 <!--Start of Main Container-->
-                <table width="600px" border="0" align="center" cellspacing="0" cellpadding="0"
-                    style="margin: 0 auto;"
+                <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0"
+                    style="margin: 0 auto; max-width: 600px;"
                 >
                     <!--Start Header Row-->
                     <tr>
@@ -40,7 +97,7 @@
                                         <a href="https://www.hgtv.com/design/packages/hgtv-ultimate-outdoor-awards/2022/2022-ultimate-outdoor-awards-nominees-pictures" target="_blank"
                                             style="text-decoration: none;"
                                         >
-                                            <img src="./src/images/Main.jpg" width="600px" alt="Outdoor pool at resort on beach"/>
+                                            <img src="./src/images/Main.jpg" width="100%" alt="Outdoor pool at resort on beach"/>
                                         </a>
                                     </td>
                                 </tr>
@@ -57,7 +114,7 @@
                             >
                                 <tr>
                                     <td align="center" style="padding: 25px 20px;">
-                                        <h1>
+                                        <h1 class="title">
                                             <a href="https://www.hgtv.com/design/packages/hgtv-ultimate-outdoor-awards/2022/2022-ultimate-outdoor-awards-nominees-pictures" target="_blank"
                                                 style="
                                                     text-decoration: none;
@@ -80,6 +137,7 @@
                                             Scroll through these waterside retreats, gorgeous gardens and more to see all the amazing work featured this year.
                                         </a>
                                         <a href="https://www.hgtv.com/design/packages/hgtv-ultimate-outdoor-awards/2022/2022-ultimate-outdoor-awards-nominees-pictures" target="_blank"
+                                            class="top-btn"
                                             style="
                                                 text-decoration: none;
                                                 background: #10adc4;
@@ -95,12 +153,13 @@
                                 <tr>
                                     <td align="center" style="padding: 60px 20px 50px 20px; font-size: 15px;">
                                         <table width="100%" border='0' align='center' cellspacing='0' cellpadding='0'>
-                                            <tr>
-                                                <td align="center" width="33.33%">
+                                            <tr class="col-direction">
+                                                <td align="center" class="col-width" width="33.33%">
                                                     <a href="https://www.hgtv.com/profiles/professionals/zfreedman-landscape-architecture/lush-outdoor-oasis-pictures" target="_blank">
                                                         <img src="./src/images/hillside estate.jpg" alt="hillside estate" width="95%" />
                                                     </a>
                                                     <a href="https://www.hgtv.com/profiles/professionals/zfreedman-landscape-architecture/lush-outdoor-oasis-pictures" target="_blank"
+                                                        class="col-title-margin"
                                                         style="
                                                             display: block;
                                                             text-decoration: none;
@@ -112,7 +171,7 @@
                                                         The Hillside Estate in California Is #Goals
                                                     </a>
                                                 </td>
-                                                <td align="center" width="33.33%">
+                                                <td align="center" class="col-width" width="33.33%">
                                                     <a href="https://www.hgtv.com/profiles/professionals/zfreedman-landscape-architecture/lush-outdoor-oasis-pictures" target="_blank">
                                                         <img src="./src/images/Denver Modern Oasis.jpg" alt="Denver Home with Pool" width="95%" />
                                                     </a>
@@ -128,7 +187,7 @@
                                                         Check Out This Modern Oasis in Denver
                                                     </a>
                                                 </td>
-                                                <td align="center" width="33.33%">
+                                                <td class="third-col" align="center" width="33.33%">
                                                     <a href="https://www.hgtv.com/profiles/professionals/zfreedman-landscape-architecture/lush-outdoor-oasis-pictures" target="_blank">
                                                         <img src="./src/images/Backyard Garden Wish.jpg" alt="backyard covered seating area" width="95%" />
                                                     </a>
@@ -173,7 +232,7 @@
                                             </tr>
                                             <tr>
                                                 <td align="center">
-                                                    <h2 
+                                                    <h2 class="section-title"
                                                     style="
                                                         font-size: 36px;
                                                         font-weight: 600;
@@ -191,12 +250,13 @@
                                 <tr>
                                     <td align="center" style="background: #ffffff; padding: 35px 20px; font-size: 15px;">
                                         <table width="100%" border='0' align='center' cellspacing='0' cellpadding='0'>
-                                            <tr>
-                                                <td align="center" width="33.33%">
+                                            <tr class="col-direction">
+                                                <td align="center" class="col-width" width="33.33%">
                                                     <a href="https://www.hgtv.com/design/decorating/design-101/before-and-after-bathroom-makeovers-pictures" target="_blank">
                                                         <img src="./src/images/Bathroom Makeover.jpg" alt="beautiful bathroom makeover" width="95%" />
                                                     </a>
                                                     <a href="https://www.hgtv.com/design/decorating/design-101/before-and-after-bathroom-makeovers-pictures" target="_blank"
+                                                        class="col-title-margin"
                                                         style="
                                                             display: block;
                                                             text-decoration: none;
@@ -208,7 +268,7 @@
                                                        Before-and-After Bathroom Makeovers
                                                     </a>
                                                 </td>
-                                                <td align="center" width="33.33%">
+                                                <td align="center" class="col-width" width="33.33%">
                                                     <a href="https://www.hgtv.com/design/rooms/kitchens/kitchens-in-color-ideas-for-brightening-the-kitchen-with-color-pictures" target="_blank">
                                                         <img src="./src/images/Colorful Kitchen.jpg" alt="kitchen with colorful backsplash" width="95%" />
                                                     </a>
@@ -224,7 +284,7 @@
                                                         100 Bright and Beautiful Colorful Kitchen Ideas
                                                     </a>
                                                 </td>
-                                                <td align="center" width="33.33%">
+                                                <td class="third-col" align="center" width="33.33%">
                                                     <a href="https://www.hgtv.com/outdoors/landscaping-and-hardscaping/lush-landscaping-ideas-for-your-front-yard-pictures" target="_blank">
                                                         <img src="./src/images/Lush Landscaping.jpg" alt="house in background with lush landscaping" width="95%" />
                                                     </a>
@@ -269,7 +329,7 @@
                                             </tr>
                                             <tr>
                                                 <td align="center">
-                                                    <h2 
+                                                    <h2 class="section-title" 
                                                     style="
                                                         font-size: 36px;
                                                         font-weight: 600;
@@ -343,12 +403,13 @@
                                             <tr>
                                                 <td align="center" style="background: #ffffff; padding: 35px 20px; font-size: 15px;">
                                                     <table width="100%" border='0' align='center' cellspacing='0' cellpadding='0'>
-                                                        <tr>
-                                                            <td align="center" width="33.33%">
+                                                        <tr class="col-direction">
+                                                            <td align="center" class="col-width" width="33.33%">
                                                                 <a href="https://www.hgtv.com/outdoors/flowers-and-plants/houseplants/the-fiddle-leaf-fig-is-fashion-forward" target="_blank">
                                                                     <img src="./src/images/Fiddle Leaf Fig.jpg" alt="plant hanging from room ceiling" width="95%" />
                                                                 </a>
                                                                 <a href="https://www.hgtv.com/outdoors/flowers-and-plants/houseplants/the-fiddle-leaf-fig-is-fashion-forward" target="_blank"
+                                                                    class="col-title-margin"
                                                                     style="
                                                                         display: block;
                                                                         text-decoration: none;
@@ -360,7 +421,7 @@
                                                                     How to Care for a Fiddle Leaf Fig
                                                                 </a>
                                                             </td>
-                                                            <td align="center" width="33.33%">
+                                                            <td align="center" class="col-width" width="33.33%">
                                                                 <a href="https://www.hgtv.com/outdoors/flowers-and-plants/houseplants/14-indoor-plants-for-low-light-pictures" target="_blank">
                                                                     <img src="./src/images/Low Light Plant.jpg" alt="plants for low light" width="95%" />
                                                                 </a>
@@ -376,7 +437,7 @@
                                                                     30 Indoor Plants That Love Low Light
                                                                 </a>
                                                             </td>
-                                                            <td align="center" width="33.33%">
+                                                            <td class="third-col" align="center" width="33.33%">
                                                                 <a href="https://www.hgtv.com/outdoors/flowers-and-plants/houseplants/forgiving-houseplants-pictures" target="_blank">
                                                                     <img src="./src/images/Forgiving Houseplants.jpg" alt="green plant " width="95%" />
                                                                 </a>
@@ -424,7 +485,7 @@
                                             </tr>
                                             <tr>
                                                 <td align="center">
-                                                    <h2 
+                                                    <h2 class="section-title" 
                                                     style="
                                                         font-size: 36px;
                                                         font-weight: 600;
@@ -456,7 +517,7 @@
                                 </tr>
                                 <tr>
                                     <td align="center" style="background: #ffffff; padding: 25px 20px 45px 20px;">
-                                        <h3 style="font-size: 20px;">
+                                        <h3 class="sofa-cat-title" style="font-size: 20px;">
                                             <a href="https://www.hgtv.com/shopping/product-reviews/burrow-cat-proof-couch-review" target="_blank"
                                                 style="
                                                     text-decoration: none;
@@ -498,12 +559,13 @@
                                             <tr>
                                                 <td align="center" style="background: #ffffff; padding: 35px 20px; font-size: 15px;">
                                                     <table width="100%" border='0' align='center' cellspacing='0' cellpadding='0'>
-                                                        <tr>
-                                                            <td align="center" width="50%">
+                                                        <tr class="col-direction">
+                                                            <td align="center" class="col-width" width="50%">
                                                                 <a href="https://www.hgtv.com/design/decorating/furniture-and-accessories/best-kids-furniture-stores" target="_blank">
                                                                     <img src="./src/images/kids furniture.jpg" alt="kid's room furniture" width="95%" />
                                                                 </a>
                                                                 <a href="https://www.hgtv.com/design/decorating/furniture-and-accessories/best-kids-furniture-stores" target="_blank"
+                                                                    class="col-title-margin"
                                                                     style="
                                                                         display: block;
                                                                         text-decoration: none;
@@ -515,7 +577,7 @@
                                                                     The Best Places to Buy Stylish Kids' Furniture Online
                                                                 </a>
                                                             </td>
-                                                            <td align="center" width="350%">
+                                                            <td align="center" class="col-width" width="350%">
                                                                 <a href="https://www.hgtv.com/outdoors/outdoor-spaces/decks--porches-and-patios/best-rocking-chairs" target="_blank">
                                                                     <img src="./src/images/Rocking Chair.jpg" alt="rocking chair on porch" width="95%" />
                                                                 </a>
@@ -563,7 +625,7 @@
                                             </tr>
                                             <tr>
                                                 <td align="center">
-                                                    <h2 
+                                                    <h2 class="section-title"
                                                     style="
                                                         font-size: 36px;
                                                         font-weight: 600;
@@ -685,9 +747,10 @@
                                         </table>
                                         <table width="100%" border='0' align='center' cellspacing='0' cellpadding='0'>
                                             <tr>
-                                                <td width="15%"></td>
+                                                <td class="footer-links-spacer" width="15%"></td>
                                                 <td align="center">
                                                     <a href="https://www.hgtv.com/" target="_blank"
+                                                        class="footer-link"
                                                         style="
                                                             text-decoration: none;
                                                             font-size: 14px;
@@ -702,6 +765,7 @@
                                                 </td>
                                                 <td align="center">
                                                     <a href="https://www.hgtv.com/" target="_blank"
+                                                        class="footer-link"
                                                         style="
                                                             text-decoration: none;
                                                             font-size: 14px;
@@ -716,6 +780,7 @@
                                                 </td>
                                                 <td align="center">
                                                     <a href="https://www.hgtv.com/" target="_blank"
+                                                        class="footer-link"
                                                         style="
                                                             text-decoration: none;
                                                             font-size: 14px;
@@ -730,6 +795,7 @@
                                                 </td>
                                                 <td align="center">
                                                     <a href="https://www.hgtv.com/" target="_blank"
+                                                        class="footer-link"
                                                         style="
                                                             text-decoration: none;
                                                             font-size: 14px;
@@ -739,25 +805,33 @@
                                                         HGTV.com
                                                     </a>
                                                 </td>
-                                                <td width="15%"></td>
+                                                <td class="footer-links-spacer" width="15%"></td>
                                             </tr>
                                         </table>
-                                        <p style="color: #5c5c5c; font-size: 14px; margin-top: 8px">
+                                        <p class="footer-text" 
+                                            style="color: #5c5c5c; font-size: 14px; margin-top: 8px"
+                                        >
                                             This email was sent to 
                                             <span style="text-decoration: underline;color: #6363ff;">
                                                 youremail@email.com
                                             </span>
                                             </br>
                                         </p>
-                                        <p style="color: #5c5c5c; font-size: 14px; margin-top: 8px">
+                                        <p class="footer-text" 
+                                            style="color: #5c5c5c; font-size: 14px; margin-top: 8px"
+                                        >
                                             &copy;2022 Discovery Communications, LLC
                                             </br>
                                         </p>
-                                        <p style="color: #5c5c5c; font-size: 14px; margin-top: 8px">
+                                        <p class="footer-text" 
+                                            style="color: #5c5c5c; font-size: 14px; margin-top: 8px"
+                                        >
                                             8403 Colesville Road | Silver Spring, MD 20910
                                             </br>
                                         </p>
-                                        <p style="color: #5c5c5c; font-size: 14px; margin-top: 8px">
+                                        <p class="footer-text" 
+                                            style="color: #5c5c5c; font-size: 14px; margin-top: 8px"
+                                        >
                                             All Rights Reserved
                                             </br>
                                         </p>
